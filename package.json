@@ -1,0 +1,19 @@
+{
+  "name": "number-transform-roman",
+  "version": "1.0.2",
+  "description": "一个用于数字转换成罗马数字的 Class 类",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datong2000/NumberTransformRoman.git"
+  },
+  "author": "DaTong <2829099680@qq.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/datong2000/NumberTransformRoman/issues"
+  },
+  "homepage": "https://github.com/datong2000/NumberTransformRoman#readme"
+}

@@ -1,23 +1,7 @@
-export default class NumberTransformRoman {
+class NumberTransformRoman {
     constructor() {
         this.state = {
             roman: ""
-        }
-
-        this.calculation = (callback) => {
-            if (callback) {
-                let value = callback()
-                return this.transformRoman(value)
-            }
-        }
-
-        this.transformRoman = (value) => {
-            let nSplit = this.valueSplit(value)
-            nSplit.forEach((n, idx) => {
-                this.transformN(n)
-                if (idx != nSplit.length - 1) this.state.roman += ','
-            })
-            return this.state.roman
         }
 
         this.valueSplit = (v) => {
@@ -50,4 +34,21 @@ export default class NumberTransformRoman {
             else return a.repeat(frequency)
         }
     }
+    calculation = (callback) => {
+        if (callback) {
+            let value = callback()
+            return this.transformRoman(value)
+        }
+    }
+
+    transformRoman = (value) => {
+        let nSplit = this.valueSplit(value)
+        nSplit.forEach((n, idx) => {
+            this.transformN(n)
+            if (idx != nSplit.length - 1) this.state.roman += ','
+        })
+        return this.state.roman
+    }
 }
+
+module.exports = NumberTransformRoman

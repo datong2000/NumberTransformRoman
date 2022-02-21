@@ -1,13 +1,13 @@
-# NumberTransformRoman
+## number-transform-roman
 
-一个用于数字转换成罗马数字的 `Class` 类，你可以使用 `transformRoman` 来进行数字转换罗马数字，也可以使用 `calculation` 来进行计算再转罗马数字.
+一个用于数字转换成罗马数字的 `class` 类，你可以使用 `transformRoman` 来进行数字转换罗马数字，也可以使用 `calculation` 来进行计算再转罗马数字.
 
 ---
 
 ##### 引入
 
 ```Javascript
-import NumberTransformRoman as ntr from 'NumberTransformRoman'  // ntr 为 NumberTransformRoman 简写
+import * as ntr from 'number-transform-roman'  // ntr 为 number-transform-roman 简写
 ```
 
 ##### 使用方法
@@ -17,7 +17,7 @@ import NumberTransformRoman as ntr from 'NumberTransformRoman'  // ntr 为 Numbe
 > transformRoman(type: number | string ) 数字转换罗马数字
 
 ```Javascript
-    import NumberTransformRoman as ntr from 'NumberTransformRoman'  // ntr 为 NumberTransformRoman 简写
+    import * as ntr from 'number-transform-roman'
     
     // 数字类型
     new ntr().transformRoman(990108010)  // 结果为:CMXC#,C#VIII,#X#
@@ -33,7 +33,7 @@ import NumberTransformRoman as ntr from 'NumberTransformRoman'  // ntr 为 Numbe
 > calculation(type: function ) 数字计算表达式
 
 ```Javascript
-    import NumberTransformRoman as ntr from 'NumberTransformRoman'  // ntr 为 NumberTransformRoman 简写
+    import * as ntr from 'number-transform-roman'
     
     // 参数为匿名函数表达式
     new ntr().calculation(() => 2 * 6 / 3)  // 结果为:IV
